@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Скрипчак](https://up.htmlacademy.ru/htmlcss/35/user/2209519).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов] (https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
