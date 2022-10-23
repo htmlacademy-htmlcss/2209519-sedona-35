@@ -18,19 +18,20 @@ html {
   height: 100%;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 body {
   min-height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 36px;
-  color: #000000;
-  background-color: #FFFFFF;
+  line-height: 1;
+  color: #000;
+  background-color: #F2F2F2;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #fff;
 }
 
 .visually-hidden {
@@ -44,19 +45,15 @@ body {
   overflow: hidden;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .page-header {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin-bottom: -10px;
 }
 
 .navigation {
-  display: grid;
-  grid-template-columns: 5px 1fr 1fr;
-  column-gap: 150px;
+  display: flex;
   align-items: center;
 }
 
@@ -66,6 +63,7 @@ body {
   padding: 0;
   justify-content: space-between;
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .navigation-user {
@@ -77,9 +75,9 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 24px 19px;
+  padding: 0 20px;
   font-family: "PT Sans", sans-serif;
-  line-height: 24px;
+  line-height: 64px;
   font-weight: 700;
   text-align: center;
   color: #000000;
@@ -93,12 +91,62 @@ body {
   min-height: 22px;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.advantages {
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 485px;
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 282px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.about-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+}
+
+/*.advantages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,34 +170,54 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
+}*/
 
-.advantages-item {}
-
-.hero {
-  background-image: url("../images/index-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  margin-bottom: 82px;
-}
-
-.hero-logo {
-  display: block;
+.advantages-list-first-line {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0;
+  min-height: 384px;
+  background-color: #82B3D3;
+  color: #fff;
 }
 
-.about {
+.advantages-list-second-line {
+  display: flex;
+}
+
+.advantages-list-third-line {
+  display: flex;
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+.advantages-list-fourth-line {
+  display: flex;
+}
+
+.advantages-item {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 384px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-title {
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   text-align: center;
-  color: #333333;
-  background-color: #ffffff;
-  margin-bottom: 90px;
 }
 
-.about-list {
-  list-style-type: none;
+.advantages-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
 }
