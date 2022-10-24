@@ -18,42 +18,81 @@ html {
   height: 100%;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 36px;
-  color: #000000;
-  background-color: #FFFFFF;
+  line-height: 1;
+  color: #000;
+  background-color: #F2F2F2;
 }
 
-.main-container {
-  flex-grow: 1;
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin-bottom: -10px;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  align-items: center;
 }
 
 .navigation-list {
-  width: 1200px;
+  display: flex;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .navigation-user {
-  max-width: 250px;
-  margin-left: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.navigation-link {
+  display: block;
+  padding: 0 20px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 64px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-container {
@@ -61,7 +100,53 @@ body {
   margin: 0 auto;
 }
 
-.advantages {
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 485px;
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 282px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.about-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+}
+
+/*.advantages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +157,6 @@ body {
 
 .advantages-list {
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -86,29 +170,54 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}*/
+
+.advantages-list-first-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 384px;
+  background-color: #82B3D3;
+  color: #fff;
 }
 
-.advantages-item {
+.advantages-list-second-line {
   display: flex;
 }
 
-.hero {
-  background-image: url("../images/index-background.jpg");
-  background-size: 1200px 485px;
-  background-repeat: no-repeat;
+.advantages-list-third-line {
+  display: flex;
+  background-color: #82B3D3;
+  color: #fff;
 }
 
-.hero-logo {
-  display: block;
-  margin: 0 auto;
+.advantages-list-fourth-line {
+  display: flex;
 }
 
-.about {
+.advantages-item {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 384px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-title {
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   text-align: center;
-  color: #333333;
-  background-color: #ffffff;
+}
+
+.advantages-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
 }
