@@ -91,6 +91,23 @@ body {
   min-height: 22px;
 }
 
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .navigation-item {
+  display: flex;
+  align-items: center;
+} */
+
 .main-container {
   flex-grow: 1;
 }
@@ -315,6 +332,45 @@ body {
   padding: 0 70px;
 }
 
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  outline-offset: -5px;
+  width: 56px;
+  height: 44px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer-social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.footer-social-vk {
+  background-image: url("../images/social-vk.svg");
+}
+
+.footer-social-tg {
+  background-image: url("../images/social-telegram.svg");
+}
+
+.footer-social-yt {
+  background-image: url("../images/social-youtube.svg");
+}
+
 .footer-contacts-address-phone {
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
@@ -323,6 +379,10 @@ body {
   font-size: 40px;
   font-weight: 400;
   color: #000;
+}
+
+.htmlacademy-link {
+  background-image: url("../images/logo_htmlacademy.svg");
 }
 
 /* Секция Каталога Герой */
