@@ -11,6 +11,8 @@
 
     <div class="container">
 
+      <!-- Хедер Каталога -->
+
       <header class="page-header">
         <h1 class="visually-hidden">Гостиницы Седоны</h1>
 
@@ -68,20 +70,26 @@
 
       </header>
 
+      <!-- Мейн Каталога -->
+
       <main class="main-container main-inner">
+
+        <!-- Секция Каталога Герой -->
 
         <section class="catalog-hero">
           <h2 class="inner-header-title">Гостиницы Седоны</h2>
+
+          <!-- Хлебные крошки -->
 
           <header class="inner-header">
 
             <div class="breadcrumbs">
 
-              <div class="breadcrumbs-item">
+              <div class="breadcrumbs-item-index">
                 <a class="breadcrumbs-link" href="index.html">Главная</a>
               </div>
 
-              <div class="breadcrumbs-item">
+              <div class="breadcrumbs-item-hotels">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </div>
 
@@ -89,10 +97,16 @@
 
           </header>
 
+          <!-- Контейнер поискового фильтра каталога -->
+
           <section class="catalog-filter-container">
             <h2 class="visually-hidden">Список жилья с фильтрами</h2>
 
+            <!-- Форма поискового фильтра каталога -->
+
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+              <!-- Фильтр Инфраструктура -->
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -124,6 +138,8 @@
 
               </fieldset>
 
+              <!-- Фильтр Тип Жилья -->
+
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
 
@@ -154,37 +170,95 @@
 
               </fieldset>
 
-              <div class="price">
-                <span>Стоимость,₽:</span>
-              </div>
+              <!-- Фильтр Стоимость -->
 
-              <button class="button" type="submit">ПРИМЕНИТЬ</button>
-              <button class="button" type="submit">СБРОСИТЬ</button>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
+                <div class="range">
+
+                  <div class="range-wrapper-inputs">
+
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="9000" name="max-price">
+                    </label>
+
+                  </div>
+
+                  <div class="range-scale">
+
+                    <div class="range-bar" style="left: 0; width: 206px">
+
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </fieldset>
+
+              <!-- Секция Кнопок ПРИМЕНИТЬ и СБРОСИТЬ -->
+
+              <section class="button-submit">
+                <h3 class="visually-hidden">Кнопки ПРИМЕНИТЬ и СБРОСИТЬ</h3>
+
+                <!-- Кнопка ПРИМЕНИТЬ  -->
+
+                <div class="button-apply"><button class="button button-apply" type="submit">ПРИМЕНИТЬ</button></div>
+
+                <!-- Кнопка СБРОСИТЬ  -->
+
+                <div class="button-throw-off"><button class="button button-throw-off" type="submit">СБРОСИТЬ</button>
+                </div>
+
+              </section>
+
             </form>
 
           </section>
 
         </section>
 
-        <div class="found">
-          <span>Найдено гостиниц: 38</span>
-        </div>
+        <!-- Секция Каталога Контроль Результатов Поиска -->
 
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
+        <section class="control-container">
+          <h3 class="visually-hidden">Контроль Результатов Поиска</h3>
 
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
+          <div class="found">НАЙДЕНО ГОСТИНИЦ: 38</div>
+
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+
+          <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+
+          <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+
+          <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+
+        </section>
+
+        <!-- Секция Результатов отбора по фильтру -->
 
         <section class="accommodation-card-container">
 
@@ -201,8 +275,8 @@
             </div>
 
             <div class="accommodation-card-favourites-container">
-              <a class="accommodation-card-button button" href="#">ПОДРОБНЕЕ</a>
-              <a class="accommodation-card-button button" href="#">В ИЗБРАННОЕ</a>
+              <a class="accommodation-card-button button-more" href="#">ПОДРОБНЕЕ</a>
+              <a class="accommodation-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
             </div>
 
             <div class="accommodation-card-rating-container">
@@ -225,8 +299,8 @@
             </div>
 
             <div class="accommodation-card-favourites-container">
-              <a class="accommodation-card-button button" href="#">ПОДРОБНЕЕ</a>
-              <a class="accommodation-card-button button" href="#">В ИЗБРАННОЕ</a>
+              <a class="accommodation-card-button button-more" href="#">ПОДРОБНЕЕ</a>
+              <a class="accommodation-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
             </div>
 
             <div class="accommodation-card-rating-container">
@@ -250,8 +324,8 @@
             </div>
 
             <div class="accommodation-card-favourites-container">
-              <a class="accommodation-card-button button" href="#">ПОДРОБНЕЕ</a>
-              <a class="accommodation-card-button button" href="#">В ИЗБРАННОЕ</a>
+              <a class="accommodation-card-button button-more" href="#">ПОДРОБНЕЕ</a>
+              <a class="accommodation-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
             </div>
             <div class="accommodation-card-rating-container">
               <div class="accommodation-card-stars"></div>
@@ -274,8 +348,8 @@
             </div>
 
             <div class="accommodation-card-favourites-container">
-              <a class="accommodation-card-button button" href="#">ПОДРОБНЕЕ</a>
-              <a class="accommodation-card-button button" href="#">В ИЗБРАННОЕ</a>
+              <a class="accommodation-card-button button-more" href="#">ПОДРОБНЕЕ</a>
+              <a class="accommodation-card-button button-favourites" href="#">В ИЗБРАННОЕ</a>
             </div>
 
             <div class="accommodation-card-rating-container">
@@ -286,6 +360,8 @@
           </div>
 
         </section>
+
+        <!-- Пагинация -->
 
         <ul class="pagination">
 
@@ -320,6 +396,8 @@
         </ul>
 
       </main>
+
+      <!-- Футер Каталога -->
 
       <footer class="page-footer">
 
